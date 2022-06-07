@@ -5,3 +5,6 @@ docker run -p 80:80 flask-app-image
 docker ps
 docker kill ID
 docker stop ID
+
+docker compose up --build -d
+docker compose down

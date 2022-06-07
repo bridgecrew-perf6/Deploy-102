@@ -5,3 +5,4 @@ services:
       context: .
     ports:
       - 80:80
+    image: aleksey4skypro/flask_app
