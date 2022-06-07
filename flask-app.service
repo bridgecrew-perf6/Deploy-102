@@ -1,0 +1,11 @@
+[Unit]
+Description=Foo
+After=network.target
+
+[Service]
+ExecStart=/home/skypro/Deploy/emv/bin/python -m flask run -h 0.0.0.0 -p 80
+WorkingDirectory=/home/skypro/Deploy
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
